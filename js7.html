@@ -1,0 +1,15 @@
+<script>
+    function checkSalary(salary){
+        if (salary < 100000){
+            return salary - salary*0.13;
+           
+        } else{
+            return salary - salary*0.2
+        }
+    }
+
+    var salary = prompt("введите зарплату:");
+    alert("ваш чистый оклад с налоговыми вычетами" +  checkSalary(salary));
+   
+
+</script>

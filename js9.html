@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function add() {
+        var name = prompt("введите овощ");
+
+        var ul = document.getElementsByTagName("ul")[0];
+        
+        var li = document.createElement("li");
+        li.innerText = name;
+        ul.appendChild(li);
+
+    }
+    function remove() {
+        var ul = document.getElementsByTagName("ul")[0];
+        ul.removeChild(ul.lastChild);
+
+    }
+    </script>
+    <h1>кабан</h1>
+    <ul>
+        <li>баклажан</li>
+        
+    </ul>
+    <button onclick="add();">добавить</button>
+    <button onclick = "remove();">убрать</button>
+</body>
+</html>
